@@ -1,7 +1,6 @@
 {
   "name": "portoflio",
   "version": "0.1.0",
-  "homepage": "https://Bauagg/github.io/portoflio",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
