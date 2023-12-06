@@ -69,3 +69,10 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 404px) {
+    .judul-education {
+        width: 100%;
+    }
+
+}

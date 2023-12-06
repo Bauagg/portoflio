@@ -23,7 +23,7 @@ const PagesHome = () => {
                                         <h1 className='fw-bold mt-5 text-name'>A. Mambaus Sholihin</h1>
                                         <p className='text-paragrap-judul'>Fullstack Developer / Web Developer</p>
                                     </div>
-                                    <div className='col-md-12 col-sm-2 col-2 my-3'>
+                                    <div className='col-md-12 col-sm-2 col-2 my-3 pe-3'>
                                         <Link to='https://github.com/Bauagg' className='fs-5'><FaGithub className='link-icon' /></Link>
                                         <Link to='https://www.linkedin.com/in/a-mambaus-sholihin-786606294/' className='mx-3 fs-5'><FaLinkedin className='link-icon' /></Link>
                                         <Link to='https://wa.me/qr/B2MKYA53OM7QC1' className='me-3 fs-5'><FaWhatsapp className='link-icon' /></Link>
