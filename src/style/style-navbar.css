@@ -1,0 +1,58 @@
+.navbar-conten {
+    z-index: 3;
+    position: relative;
+    background-color: #000000;
+}
+
+.logo-navabar {
+    width: 80px;
+}
+
+.navbar-link {
+    padding: 8px;
+    width: 127px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-link:hover {
+    background-color: white;
+    color: #000000;
+}
+
+.toggle-navbar {
+    background-color: #000000;
+    position: absolute;
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar-conten {
+        background-color: #000000;
+    }
+}
+
+@media screen and (max-width: 994px) {
+    .navbar-conten {
+        background-color: #000000;
+    }
+
+    .link-togle {
+        color: white;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+    }
+
+    .link-togle:hover {
+        background-color: white;
+        color: #000000;
+    }
+
+
+}

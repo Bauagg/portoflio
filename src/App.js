@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import IndexPages from "./componen/pages/index-pages";
+import NavbarIndex from "./componen/navbar";
+import DetailBootcampEduwork from "./componen/pages/detail-bootcamp";
+import DetailBootcampUdemy from "./componen/pages/detail-bootcamp2";
+import DetailBootcampMySkill from "./componen/pages/detail-bootcamp3";
+import DetailBootcampCodingStudio from "./componen/pages/detail-bootcamp4";
+import DetailBootcampKlass from "./componen/pages/detail-bootcamp5";
+import DetailBootcampRevou from "./componen/pages/detail-boocatmp6";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      <BrowserRouter>
+        <NavbarIndex />
+        <Routes>
+          <Route path="/" element={<IndexPages />} />
+          <Route path="/bootcamp-eduwork" element={<DetailBootcampEduwork />} />
+          <Route path="/bootcamp-udemy" element={<DetailBootcampUdemy />} />
+          <Route path="/bootcamp-mySkill" element={<DetailBootcampMySkill />} />
+          <Route path="/bootcamp-coding-studio" element={<DetailBootcampCodingStudio />} />
+          <Route path="/bootcamp-klass" element={<DetailBootcampKlass />} />
+          <Route path="/bootcamp-revou" element={<DetailBootcampRevou />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
