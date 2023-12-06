@@ -48,9 +48,9 @@ const PagesHome4 = () => {
                                     <img className='w-100' src={imageFrondEndEcommerce} alt='gambar certifikate' />
                                     <div className='contenProject'>
                                         <div>
-                                            <Link to='https://github.com/Bauagg/foun_end_tugas1' className='linkProject'><FaGithub /></Link>
+                                            <Link to='https://github.com/Bauagg/tugas-res-api-interviu' className='linkProject'><FaGithub /></Link>
                                             <h5 className='text-temaProject'>FRONT-END</h5>
-                                            <h5 className='text-temaProject'>E-COMMERCE</h5>
+                                            <h5 className='text-temaProject'>INVENTORY</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -60,9 +60,9 @@ const PagesHome4 = () => {
                                     <img className='w-100' src={imageBackEndEcommerce} alt='gambar certifikate' />
                                     <div className='contenProject'>
                                         <div>
-                                            <Link to='https://github.com/Bauagg/back_end_baru' className='linkProject'><FaGithub /></Link>
+                                            <Link to='https://github.com/Bauagg/back-end-nodejs-tes-interviu' className='linkProject'><FaGithub /></Link>
                                             <h5 className='text-temaProject'>BACK-END</h5>
-                                            <h5 className='text-temaProject'>E-COMMERCE</h5>
+                                            <h5 className='text-temaProject'>INVENTORY</h5>
                                         </div>
                                     </div>
                                 </div>
