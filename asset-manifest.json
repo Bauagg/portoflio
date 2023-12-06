@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.377623ad.css",
+    "main.css": "/static/css/main.059c3e61.css",
     "main.js": "/static/js/main.b183f387.js",
     "static/js/787.6f614db9.chunk.js": "/static/js/787.6f614db9.chunk.js",
     "static/media/klass.com.png": "/static/media/klass.com.08877be22da76950dd4a.png",
@@ -35,12 +35,12 @@
     "index.html": "/index.html",
     "static/media/css.svg": "/static/media/css.a19585053c8ea19329458d59e5829187.svg",
     "static/media/html.svg": "/static/media/html.f8fbb93d1422fa3a317ea13613e97cd7.svg",
-    "main.377623ad.css.map": "/static/css/main.377623ad.css.map",
+    "main.059c3e61.css.map": "/static/css/main.059c3e61.css.map",
     "main.b183f387.js.map": "/static/js/main.b183f387.js.map",
     "787.6f614db9.chunk.js.map": "/static/js/787.6f614db9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.377623ad.css",
+    "static/css/main.059c3e61.css",
     "static/js/main.b183f387.js"
   ]
 }
