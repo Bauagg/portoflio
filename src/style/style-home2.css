@@ -64,6 +64,10 @@
     right: 30px;
 }
 
+.animate:hover {
+    background-color: #000000;
+}
+
 @media screen and (max-width: 767px) {
     .text-education {
         width: 100%;

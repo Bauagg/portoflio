@@ -20,8 +20,23 @@ import imageVsCode from '../../images/vs.code.png'
 import imageLaragon from '../../images/laragon.png'
 import imageXampp from '../../images/xampp.png'
 import imageInsomnia from '../../images/insomnia.png'
+import 'animate.css';
+import VisibilitySensor from 'react-visibility-sensor';
 
 const PagesHome2 = () => {
+
+    const handleVisibility = (isVisible, targetClass) => {
+        const elements = document.getElementsByClassName(targetClass);
+        if (elements) {
+            for (let element of elements) {
+                if (isVisible) {
+                    element.classList.add('animate__animated', 'animate__zoomIn');
+                } else {
+                    element.classList.remove('animate__animated', 'animate__zoomIn');
+                }
+            }
+        }
+    };
 
     return (
         <div className='container-skill'>
@@ -33,91 +48,291 @@ const PagesHome2 = () => {
                         </div>
                         <h4 className='fs-bold ms-5 my-5'>FRONT-END:</h4>
                         <div className='row'>
-                            <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3'>
-                                <img className='mx-auto d-block' src={imageHtml} alt='logo react' />
-                                <p className='text-center mt-3 text-skill'>HTML5</p>
+                            <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3' >
+                                <VisibilitySensor
+                                    partialVisibility={true}
+                                    onChange={(isVisible) => handleVisibility(isVisible, 'htmlImage')}
+                                >
+                                    <div className="htmlImage">
+                                        <img className='mx-auto d-block'
+                                            onMouseEnter={(e) => e.target.classList.add('animate__animated', 'animate__swing')}
+                                            onMouseLeave={(e) => e.target.classList.remove('animate__animated', 'animate__swing')}
+                                            src={imageHtml} alt='logo react' />
+                                        <p className='text-center mt-3 text-skill'>HTML5</p>
+                                    </div>
+                                </VisibilitySensor>
                             </div>
                             <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3'>
-                                <img className='mx-auto d-block' src={imageCss} alt='logo react' />
-                                <p className='text-center mt-3 text-skill'>CSS3</p>
+                                <VisibilitySensor
+                                    partialVisibility={true}
+                                    onChange={(isVisible) => handleVisibility(isVisible, 'htmlImage')}
+                                >
+                                    <div className="htmlImage">
+                                        <img className='mx-auto d-block'
+                                            onMouseEnter={(e) => e.target.classList.add('animate__animated', 'animate__swing')}
+                                            onMouseLeave={(e) => e.target.classList.remove('animate__animated', 'animate__swing')}
+                                            src={imageCss} alt='logo react' />
+                                        <p className='text-center mt-3 text-skill'>CSS3</p>
+                                    </div>
+                                </VisibilitySensor>
                             </div>
                             <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3'>
-                                <img className='mx-auto d-block' src={imageSass} alt='logo react' />
-                                <p className='text-center mt-3 text-skill'>SASS</p>
+                                <VisibilitySensor
+                                    partialVisibility={true}
+                                    onChange={(isVisible) => handleVisibility(isVisible, 'htmlImage')}
+                                >
+                                    <div className="htmlImage">
+                                        <img className='mx-auto d-block'
+                                            onMouseEnter={(e) => e.target.classList.add('animate__animated', 'animate__swing')}
+                                            onMouseLeave={(e) => e.target.classList.remove('animate__animated', 'animate__swing')}
+                                            src={imageSass} alt='logo react' />
+                                        <p className='text-center mt-3 text-skill'>SASS</p>
+                                    </div>
+                                </VisibilitySensor>
                             </div>
                             <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3'>
-                                <img className='mx-auto d-block' src={imageBootstrap} alt='logo react' />
-                                <p className='text-center mt-3 text-skill'>BOOTSTARP</p>
+                                <VisibilitySensor
+                                    partialVisibility={true}
+                                    onChange={(isVisible) => handleVisibility(isVisible, 'htmlImage')}
+                                >
+                                    <div className="htmlImage">
+                                        <img className='mx-auto d-block'
+                                            onMouseEnter={(e) => e.target.classList.add('animate__animated', 'animate__swing')}
+                                            onMouseLeave={(e) => e.target.classList.remove('animate__animated', 'animate__swing')}
+                                            src={imageBootstrap} alt='logo react' />
+                                        <p className='text-center mt-3 text-skill'>BOOTSTARP</p>
+                                    </div>
+                                </VisibilitySensor>
                             </div>
                             <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3'>
-                                <img className='mx-auto d-block' src={imageGit} alt='logo react' />
-                                <p className='text-center mt-3 text-skill'>GIT</p>
+                                <VisibilitySensor
+                                    partialVisibility={true}
+                                    onChange={(isVisible) => handleVisibility(isVisible, 'htmlImage')}
+                                >
+                                    <div className="htmlImage">
+                                        <img className='mx-auto d-block'
+                                            onMouseEnter={(e) => e.target.classList.add('animate__animated', 'animate__swing')}
+                                            onMouseLeave={(e) => e.target.classList.remove('animate__animated', 'animate__swing')}
+                                            src={imageGit} alt='logo react' />
+                                        <p className='text-center mt-3 text-skill'>GIT</p>
+                                    </div>
+                                </VisibilitySensor>
                             </div>
                             <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3'>
-                                <img className='mx-auto d-block' src={imageReact} alt='logo react' />
-                                <p className='text-center mt-3 text-skill'>REACT</p>
+                                <VisibilitySensor
+                                    partialVisibility={true}
+                                    onChange={(isVisible) => handleVisibility(isVisible, 'htmlImage')}
+                                >
+                                    <div className="htmlImage">
+                                        <img className='mx-auto d-block'
+                                            onMouseEnter={(e) => e.target.classList.add('animate__animated', 'animate__swing')}
+                                            onMouseLeave={(e) => e.target.classList.remove('animate__animated', 'animate__swing')}
+                                            src={imageReact} alt='logo react' />
+                                        <p className='text-center mt-3 text-skill'>REACT</p>
+                                    </div>
+                                </VisibilitySensor>
                             </div>
                             <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3'>
-                                <img className='mx-auto d-block' src={imagefigma} alt='logo react' />
-                                <p className='text-center mt-3 text-skill'>FIGMA</p>
+                                <VisibilitySensor
+                                    partialVisibility={true}
+                                    onChange={(isVisible) => handleVisibility(isVisible, 'htmlImage')}
+                                >
+                                    <div className="htmlImage">
+                                        <img className='mx-auto d-block'
+                                            onMouseEnter={(e) => e.target.classList.add('animate__animated', 'animate__swing')}
+                                            onMouseLeave={(e) => e.target.classList.remove('animate__animated', 'animate__swing')}
+                                            src={imagefigma} alt='logo react' />
+                                        <p className='text-center mt-3 text-skill'>FIGMA</p>
+                                    </div>
+                                </VisibilitySensor>
                             </div>
                             <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3'>
-                                <img className='mx-auto d-block' src={imageJavascript} alt='logo react' />
-                                <p className='text-center mt-3 text-skill'>JAVASCRIPT</p>
+                                <VisibilitySensor
+                                    partialVisibility={true}
+                                    onChange={(isVisible) => handleVisibility(isVisible, 'htmlImage')}
+                                >
+                                    <div className="htmlImage">
+                                        <img className='mx-auto d-block'
+                                            onMouseEnter={(e) => e.target.classList.add('animate__animated', 'animate__swing')}
+                                            onMouseLeave={(e) => e.target.classList.remove('animate__animated', 'animate__swing')}
+                                            src={imageJavascript} alt='logo react' />
+                                        <p className='text-center mt-3 text-skill'>JAVASCRIPT</p>
+                                    </div>
+                                </VisibilitySensor>
                             </div>
                         </div>
                         <h4 className='fs-bold ms-5 my-5'>BACK-END:</h4>
                         <div className='row'>
                             <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3'>
-                                <img className='mx-auto d-block' src={imageNodeJs} alt='logo react' />
-                                <p className='text-center mt-3 text-skill'>NODE.JS</p>
+                                <VisibilitySensor
+                                    partialVisibility={true}
+                                    onChange={(isVisible) => handleVisibility(isVisible, 'htmlImage')}
+                                >
+                                    <div className="htmlImage">
+                                        <img className='mx-auto d-block'
+                                            onMouseEnter={(e) => e.target.classList.add('animate__animated', 'animate__swing')}
+                                            onMouseLeave={(e) => e.target.classList.remove('animate__animated', 'animate__swing')}
+                                            src={imageNodeJs} alt='logo react' />
+                                        <p className='text-center mt-3 text-skill'>NODE.JS</p>
+                                    </div>
+                                </VisibilitySensor>
                             </div>
                             <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3'>
-                                <img className='mx-auto d-block' src={imageSQL} alt='logo react' />
-                                <p className='text-center mt-3 text-skill'>MYSQL</p>
+                                <VisibilitySensor
+                                    partialVisibility={true}
+                                    onChange={(isVisible) => handleVisibility(isVisible, 'htmlImage')}
+                                >
+                                    <div className="htmlImage">
+                                        <img className='mx-auto d-block'
+                                            onMouseEnter={(e) => e.target.classList.add('animate__animated', 'animate__swing')}
+                                            onMouseLeave={(e) => e.target.classList.remove('animate__animated', 'animate__swing')}
+                                            src={imageSQL} alt='logo react' />
+                                        <p className='text-center mt-3 text-skill'>MYSQL</p>
+                                    </div>
+                                </VisibilitySensor>
                             </div>
                             <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3'>
-                                <img className='mx-auto d-block imageMongoDb' src={imageMongoDb} alt='logo react' />
-                                <p className='text-center mt-3 text-skill'>MONGODB</p>
+                                <VisibilitySensor
+                                    partialVisibility={true}
+                                    onChange={(isVisible) => handleVisibility(isVisible, 'htmlImage')}
+                                >
+                                    <div className="htmlImage">
+                                        <img className='mx-auto d-block imageMongoDb'
+                                            onMouseEnter={(e) => e.target.classList.add('animate__animated', 'animate__swing')}
+                                            onMouseLeave={(e) => e.target.classList.remove('animate__animated', 'animate__swing')}
+                                            src={imageMongoDb} alt='logo react' />
+                                        <p className='text-center mt-3 text-skill'>MONGODB</p>
+                                    </div>
+                                </VisibilitySensor>
                             </div>
                             <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3'>
-                                <img className='mx-auto d-block imageIconSkill' src={imageExpress} alt='logo react' />
-                                <p className='text-center mt-3 text-skill'>EXPRESS.JS</p>
+                                <VisibilitySensor
+                                    partialVisibility={true}
+                                    onChange={(isVisible) => handleVisibility(isVisible, 'htmlImage')}
+                                >
+                                    <div className="htmlImage">
+                                        <img className='mx-auto d-block imageIconSkill'
+                                            onMouseEnter={(e) => e.target.classList.add('animate__animated', 'animate__swing')}
+                                            onMouseLeave={(e) => e.target.classList.remove('animate__animated', 'animate__swing')}
+                                            src={imageExpress} alt='logo react' />
+                                        <p className='text-center mt-3 text-skill'>EXPRESS.JS</p>
+                                    </div>
+                                </VisibilitySensor>
                             </div>
                             <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3'>
-                                <img className='mx-auto d-block imageIconSkill' src={imageSequelize} alt='logo react' />
-                                <p className='text-center mt-3 text-skill'>SEQUELIZE</p>
+                                <VisibilitySensor
+                                    partialVisibility={true}
+                                    onChange={(isVisible) => handleVisibility(isVisible, 'htmlImage')}
+                                >
+                                    <div className="htmlImage">
+                                        <img className='mx-auto d-block imageIconSkill'
+                                            onMouseEnter={(e) => e.target.classList.add('animate__animated', 'animate__swing')}
+                                            onMouseLeave={(e) => e.target.classList.remove('animate__animated', 'animate__swing')}
+                                            src={imageSequelize} alt='logo react' />
+                                        <p className='text-center mt-3 text-skill'>SEQUELIZE</p>
+                                    </div>
+                                </VisibilitySensor>
                             </div>
                             <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3'>
-                                <img className='mx-auto d-block imageIconSkill' src={imageGolang} alt='logo react' />
-                                <p className='text-center mt-3 text-skill'>GOLANG</p>
+                                <VisibilitySensor
+                                    partialVisibility={true}
+                                    onChange={(isVisible) => handleVisibility(isVisible, 'htmlImage')}
+                                >
+                                    <div className="htmlImage">
+                                        <img className='mx-auto d-block imageIconSkill'
+                                            onMouseEnter={(e) => e.target.classList.add('animate__animated', 'animate__swing')}
+                                            onMouseLeave={(e) => e.target.classList.remove('animate__animated', 'animate__swing')}
+                                            src={imageGolang} alt='logo react' />
+                                        <p className='text-center mt-3 text-skill'>GOLANG</p>
+                                    </div>
+                                </VisibilitySensor>
                             </div>
                             <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3'>
-                                <img className='mx-auto d-block imageIconSkill' src={imageGin} alt='logo react' />
-                                <p className='text-center mt-3 text-skill'>GIN</p>
+                                <VisibilitySensor
+                                    partialVisibility={true}
+                                    onChange={(isVisible) => handleVisibility(isVisible, 'htmlImage')}
+                                >
+                                    <div className="htmlImage">
+                                        <img className='mx-auto d-block imageIconSkill'
+                                            onMouseEnter={(e) => e.target.classList.add('animate__animated', 'animate__swing')}
+                                            onMouseLeave={(e) => e.target.classList.remove('animate__animated', 'animate__swing')}
+                                            src={imageGin} alt='logo react' />
+                                        <p className='text-center mt-3 text-skill'>GIN</p>
+                                    </div>
+                                </VisibilitySensor>
                             </div>
                             <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3'>
-                                <img className='mx-auto d-block imageIconSkill' src={imageGorm} alt='logo react' />
-                                <p className='text-center mt-3 text-skill'>GORM</p>
+                                <VisibilitySensor
+                                    partialVisibility={true}
+                                    onChange={(isVisible) => handleVisibility(isVisible, 'htmlImage')}
+                                >
+                                    <div className="htmlImage">
+                                        <img className='mx-auto d-block imageIconSkill'
+                                            onMouseEnter={(e) => e.target.classList.add('animate__animated', 'animate__swing')}
+                                            onMouseLeave={(e) => e.target.classList.remove('animate__animated', 'animate__swing')}
+                                            src={imageGorm} alt='logo react' />
+                                        <p className='text-center mt-3 text-skill'>GORM</p>
+                                    </div>
+                                </VisibilitySensor>
                             </div>
                         </div>
                         <h4 className='fs-bold ms-5 my-5'>TOOLS:</h4>
                         <div className='row'>
                             <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3'>
-                                <img className='mx-auto d-block imageIconSkill' src={imageVsCode} alt='logo react' />
-                                <p className='text-center mt-3 text-skill'>VS.CODE</p>
+                                <VisibilitySensor
+                                    partialVisibility={true}
+                                    onChange={(isVisible) => handleVisibility(isVisible, 'htmlImage')}
+                                >
+                                    <div className="htmlImage">
+                                        <img className='mx-auto d-block imageIconSkill'
+                                            onMouseEnter={(e) => e.target.classList.add('animate__animated', 'animate__swing')}
+                                            onMouseLeave={(e) => e.target.classList.remove('animate__animated', 'animate__swing')}
+                                            src={imageVsCode} alt='logo react' />
+                                        <p className='text-center mt-3 text-skill'>VS.CODE</p>
+                                    </div>
+                                </VisibilitySensor>
                             </div>
                             <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3'>
-                                <img className='mx-auto d-block laragon' src={imageLaragon} alt='logo react' />
-                                <p className='text-center mt-3 text-skill'>lARAGON</p>
+                                <VisibilitySensor
+                                    partialVisibility={true}
+                                    onChange={(isVisible) => handleVisibility(isVisible, 'htmlImage')}
+                                >
+                                    <div className="htmlImage">
+                                        <img className='mx-auto d-block laragon'
+                                            onMouseEnter={(e) => e.target.classList.add('animate__animated', 'animate__swing')}
+                                            onMouseLeave={(e) => e.target.classList.remove('animate__animated', 'animate__swing')}
+                                            src={imageLaragon} alt='logo react' />
+                                        <p className='text-center mt-3 text-skill'>lARAGON</p>
+                                    </div>
+                                </VisibilitySensor>
                             </div>
                             <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3'>
-                                <img className='mx-auto d-block xampp' src={imageXampp} alt='logo react' />
-                                <p className='text-center mt-3 text-skill'>XAMPP</p>
+                                <VisibilitySensor
+                                    partialVisibility={true}
+                                    onChange={(isVisible) => handleVisibility(isVisible, 'htmlImage')}
+                                >
+                                    <div className="htmlImage">
+                                        <img className='mx-auto d-block xampp'
+                                            onMouseEnter={(e) => e.target.classList.add('animate__animated', 'animate__swing')}
+                                            onMouseLeave={(e) => e.target.classList.remove('animate__animated', 'animate__swing')}
+                                            src={imageXampp} alt='logo react' />
+                                        <p className='text-center mt-3 text-skill'>XAMPP</p>
+                                    </div>
+                                </VisibilitySensor>
                             </div>
                             <div className='col-xl-3 col-md-3 col-sm-6 col-6 mt-3'>
-                                <img className='mx-auto d-block imageIconSkill' src={imageInsomnia} alt='logo react' />
-                                <p className='text-center mt-3 text-skill'>INSOMNIA</p>
+                                <VisibilitySensor
+                                    partialVisibility={true}
+                                    onChange={(isVisible) => handleVisibility(isVisible, 'htmlImage')}
+                                >
+                                    <div className="htmlImage">
+                                        <img className='mx-auto d-block imageIconSkill'
+                                            onMouseEnter={(e) => e.target.classList.add('animate__animated', 'animate__swing')}
+                                            onMouseLeave={(e) => e.target.classList.remove('animate__animated', 'animate__swing')}
+                                            src={imageInsomnia} alt='logo react' />
+                                        <p className='text-center mt-3 text-skill'>INSOMNIA</p>
+                                    </div>
+                                </VisibilitySensor>
                             </div>
                         </div>
                     </div>
