@@ -20,15 +20,15 @@ const PagesHome = () => {
                             <div className='conten-profile'>
                                 <div className='row'>
                                     <div className='col-md-12 col-sm-10 col-10'>
-                                        <h2 className='text-judul animate__animated animate__backInDown'>Hi, I am</h2>
-                                        <h1 className='fw-bold mt-5 text-name animate__animated animate__backInLeft'>A. Mambaus Sholihin</h1>
-                                        <p className='text-paragrap-judul animate__animated animate__backInLeft'>Fullstack Developer / Web Developer</p>
+                                        <h2 className='text-judul animate__animated animate__backInDown animate__delay-1s'>Hi, I am</h2>
+                                        <h1 className='fw-bold mt-5 text-name animate__animated animate__backInLeft animate__delay-1s'>A. Mambaus Sholihin</h1>
+                                        <p className='text-paragrap-judul animate__animated animate__backInLeft animate__delay-1s'>Fullstack Developer / Web Developer</p>
                                     </div>
                                     <div className='col-md-12 col-sm-2 col-2 my-3 pe-3'>
-                                        <Link to='https://github.com/Bauagg' className='fs-5'><FaGithub className='link-icon animate__animated animate__bounce' /></Link>
-                                        <Link to='https://www.linkedin.com/in/a-mambaus-sholihin-786606294/' className='mx-3 fs-5'><FaLinkedin className='link-icon animate__animated animate__bounce' /></Link>
-                                        <Link to='https://wa.me/qr/B2MKYA53OM7QC1' className='me-3 fs-5'><FaWhatsapp className='link-icon animate__animated animate__bounce' /></Link>
-                                        <Link to='https://www.facebook.com/profile.php?id=100009365827821&locale=id_ID' className='fs-5'><FaFacebook className='link-icon animate__animated animate__bounce' /></Link>
+                                        <Link to='https://github.com/Bauagg' className='fs-5'><FaGithub className='link-icon animate__animated animate__bounce animate__delay-1s' /></Link>
+                                        <Link to='https://www.linkedin.com/in/a-mambaus-sholihin-786606294/' className='mx-3 fs-5'><FaLinkedin className='link-icon animate__animated animate__bounce animate__delay-1s' /></Link>
+                                        <Link to='https://wa.me/qr/B2MKYA53OM7QC1' className='me-3 fs-5'><FaWhatsapp className='link-icon animate__animated animate__bounce animate__delay-1s' /></Link>
+                                        <Link to='https://www.facebook.com/profile.php?id=100009365827821&locale=id_ID' className='fs-5'><FaFacebook className='link-icon animate__animated animate__bounce animate__delay-1s' /></Link>
                                     </div>
                                 </div>
                             </div>
